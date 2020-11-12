@@ -1,0 +1,297 @@
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Thin.eot");
+  src: local("Geometria Thin"), local("Geometria-Thin"), url("../fonts/Geometria-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Thin.woff") format("woff"), url("../fonts/Geometria-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-MediumItalic.eot");
+  src: local("Geometria MediumItalic"), local("Geometria-MediumItalic"), url("../fonts/Geometria-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-MediumItalic.woff") format("woff"), url("../fonts/Geometria-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Italic.eot");
+  src: local("Geometria Italic"), local("Geometria-Italic"), url("../fonts/Geometria-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Italic.woff") format("woff"), url("../fonts/Geometria-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Heavy.eot");
+  src: local("Geometria Heavy"), local("Geometria-Heavy"), url("../fonts/Geometria-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Heavy.woff") format("woff"), url("../fonts/Geometria-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-ExtraBoldItalic.eot");
+  src: local("Geometria ExtraBoldItalic"), local("Geometria-ExtraBoldItalic"), url("../fonts/Geometria-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-ExtraBoldItalic.woff") format("woff"), url("../fonts/Geometria-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Medium.eot");
+  src: local("Geometria Medium"), local("Geometria-Medium"), url("../fonts/Geometria-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Medium.woff") format("woff"), url("../fonts/Geometria-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-BoldItalic.eot");
+  src: local("Geometria BoldItalic"), local("Geometria-BoldItalic"), url("../fonts/Geometria-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-BoldItalic.woff") format("woff"), url("../fonts/Geometria-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-LightItalic.eot");
+  src: local("Geometria LightItalic"), local("Geometria-LightItalic"), url("../fonts/Geometria-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-LightItalic.woff") format("woff"), url("../fonts/Geometria-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-HeavyItalic.eot");
+  src: local("Geometria HeavyItalic"), local("Geometria-HeavyItalic"), url("../fonts/Geometria-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-HeavyItalic.woff") format("woff"), url("../fonts/Geometria-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria.eot");
+  src: local("Geometria"), url("../fonts/Geometria.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria.woff") format("woff"), url("../fonts/Geometria.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Bold.eot");
+  src: local("Geometria Bold"), local("Geometria-Bold"), url("../fonts/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Bold.woff") format("woff"), url("../fonts/Geometria-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-ExtraBold.eot");
+  src: local("Geometria ExtraBold"), local("Geometria-ExtraBold"), url("../fonts/Geometria-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-ExtraBold.woff") format("woff"), url("../fonts/Geometria-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-ThinItalic.eot");
+  src: local("Geometria ThinItalic"), local("Geometria-ThinItalic"), url("../fonts/Geometria-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-ThinItalic.woff") format("woff"), url("../fonts/Geometria-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-ExtraLightItalic.eot");
+  src: local("Geometria ExtraLightItalic"), local("Geometria-ExtraLightItalic"), url("../fonts/Geometria-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-ExtraLightItalic.woff") format("woff"), url("../fonts/Geometria-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Light.eot");
+  src: local("Geometria Light"), local("Geometria-Light"), url("../fonts/Geometria-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Light.woff") format("woff"), url("../fonts/Geometria-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-ExtraLight.eot");
+  src: local("Geometria ExtraLight"), local("Geometria-ExtraLight"), url("../fonts/Geometria-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-ExtraLight.woff") format("woff"), url("../fonts/Geometria-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Belepotan";
+  src: url("../fonts/Belepotan.eot") format("eot"), url("../fonts/Belepotan.ttf") format("truetype"), url("../fonts/Belepotan-Italic.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Bodoni";
+  src: url("../fonts/BodoniFLF-Roman.ttf"); }
+
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  background-color: #A39588; }
+
+.wrapper {
+  font-family: 'Geometria', sans-serif;
+  font-weight: normal;
+  color: #FFFFFF; }
+  .wrapper .logo {
+    font-family: 'Belepotan', sans-serif;
+    font-weight: 100;
+    font-style: italic; }
+  .wrapper .main-content {
+    background: #FFF;
+    color: #A39588;
+    border-radius: 20px;
+    padding: 120px; }
+  .wrapper .header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px; }
+    .wrapper .header a {
+      color: #FFFFFF;
+      text-decoration: none; }
+    .wrapper .header .navigation {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between; }
+      .wrapper .header .navigation a {
+        padding: 0px 10px; }
+        .wrapper .header .navigation a:hover {
+          opacity: 0.5;
+          transition: .5s; }
+    .wrapper .header .city {
+      text-decoration: underline; }
+    .wrapper .header .profile-and-cart {
+      display: flex;
+      flex-flow: row nowrap; }
+      .wrapper .header .profile-and-cart img {
+        margin: 0px 5px;
+        cursor: pointer; }
+  .wrapper .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 30px 150px; }
+    .wrapper .footer div {
+      display: flex;
+      flex-flow: column nowrap; }
+      .wrapper .footer div a {
+        color: #FFFFFF;
+        text-decoration: none; }
+        .wrapper .footer div a:hover {
+          opacity: 0.5;
+          transition: .5s; }
+      .wrapper .footer div p, .wrapper .footer div a {
+        font-size: 14px;
+        padding-bottom: 5px; }
+      .wrapper .footer div h2, .wrapper .footer div h4 {
+        padding-bottom: 20px; }
+      .wrapper .footer div:nth-child(1) {
+        font-size: 12px; }
+      .wrapper .footer div:nth-child(4) {
+        max-width: 33%; }
+        .wrapper .footer div:nth-child(4) p {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between; }
+
+.wrapper .main-content {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 50px; }
+  .wrapper .main-content .catalog {
+    width: 200px;
+    font-size: 14px; }
+    .wrapper .main-content .catalog > p:nth-child(1) {
+      font-size: 13px;
+      color: #828282; }
+      .wrapper .main-content .catalog > p:nth-child(1) span:hover {
+        cursor: pointer;
+        color: black; }
+    .wrapper .main-content .catalog > p:nth-child(2) {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: 800; }
+    .wrapper .main-content .catalog .categories {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      width: 140px;
+      padding-top: 30px; }
+      .wrapper .main-content .catalog .categories span {
+        color: #666666;
+        padding: 5px 20px;
+        border-radius: 4px;
+        cursor: pointer; }
+        .wrapper .main-content .catalog .categories span:hover {
+          border: solid 2px #A39588;
+          transition: 1s; }
+      .wrapper .main-content .catalog .categories .active {
+        color: white;
+        background: #A39588; }
+    .wrapper .main-content .catalog .filters > div {
+      padding: 15px 20px; }
+      .wrapper .main-content .catalog .filters > div span {
+        color: black;
+        font-weight: bold; }
+      .wrapper .main-content .catalog .filters > div > div {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin: 5px 0px; }
+        .wrapper .main-content .catalog .filters > div > div p {
+          padding-left: 7px;
+          color: black; }
+          .wrapper .main-content .catalog .filters > div > div p span {
+            color: #666666;
+            font-weight: 300; }
+    .wrapper .main-content .catalog .filters .country > span {
+      cursor: pointer;
+      color: #A39588;
+      font-weight: 400; }
+      .wrapper .main-content .catalog .filters .country > span:hover {
+        color: black;
+        transition: color .5s; }
+    .wrapper .main-content .catalog .apply-filters {
+      padding: 1px;
+      margin-left: 20px;
+      position: relative;
+      background: #ccc;
+      z-index: 1;
+      border-radius: 6px;
+      overflow: hidden;
+      width: 122px; }
+      .wrapper .main-content .catalog .apply-filters input {
+        background: white;
+        color: #A39588;
+        box-sizing: border-box;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        z-index: 2;
+        padding: 10px 25px;
+        cursor: pointer;
+        border-radius: 5px; }
+        .wrapper .main-content .catalog .apply-filters input:hover ~ .border {
+          width: 100%;
+          height: 100%; }
+        .wrapper .main-content .catalog .apply-filters input:hover {
+          color: black;
+          transition: color 1s; }
+      .wrapper .main-content .catalog .apply-filters .border {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 0%;
+        background: black;
+        z-index: -1;
+        -webkit-transition: height 0.3s, width 0.3s 0.1s;
+        transition: height 0.3s, width 0.3s 0.1s; }
+    .wrapper .main-content .catalog > p:last-child {
+      margin: 15px 20px;
+      text-decoration: underline; }
+      .wrapper .main-content .catalog > p:last-child:hover {
+        cursor: pointer;
+        color: black;
+        transition: color .5s; }

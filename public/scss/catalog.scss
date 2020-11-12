@@ -1,0 +1,157 @@
+@import "page-template.scss";
+
+.wrapper {
+
+
+    .main-content {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 50px;
+
+        .catalog {
+            width: 200px;
+            font-size: 14px;
+            >p {
+                &:nth-child(1) {
+                    font-size: 13px;
+                    color: $textcolor3;
+
+                    span:hover {
+                        cursor: pointer;
+                        color: black;
+                    }
+                }
+
+                &:nth-child(2) {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+            }
+
+            .categories {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-start;
+                width: 140px;
+                padding-top: 30px;
+                span {
+                    color: $menucolor;
+                    padding: 5px 20px;
+                    border-radius: 4px;
+
+                    cursor: pointer;
+
+                    &:hover {
+                        border: solid 2px $textcolor1;
+                        transition: 1s;
+                    }
+                }
+
+                .active {
+                    color: white;
+                    background: $textcolor1;
+                }
+            }
+
+            .filters {
+                >div {
+                    padding: 15px 20px;
+
+                    span {
+                        color: black;
+                        font-weight: bold;
+                    }
+
+                    >div {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        margin: 5px 0px;
+
+                        p {
+                            padding-left: 7px;
+                            color: black;
+                            span {
+                                color: $menucolor;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+
+                .country {
+                    >span {
+                        cursor: pointer;
+
+                        color: $textcolor1;
+                        font-weight: 400;
+
+                        &:hover {
+                            color: black;
+                            transition: color .5s;
+                        }
+                    }
+                }
+            }
+            .apply-filters {
+                padding: 1px;
+                margin-left: 20px;
+                position: relative;
+                background: #ccc;
+                z-index: 1;
+                border-radius: 6px;
+                overflow: hidden;
+                width: 122px;
+
+                input {
+                    background: white;
+                    color: $textcolor1;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    outline: none;
+                    border: none;
+                    z-index: 2;
+                    padding: 10px 25px;
+                    cursor: pointer;
+
+                    border-radius: 5px;
+
+                    &:hover ~ .border {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &:hover {
+                        color: black;
+                        transition: color 1s;
+                    }
+                }
+
+                .border {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 0%;
+                    background: black;
+                    z-index: -1;
+                    -webkit-transition: height 0.3s, width 0.3s 0.1s;
+                    transition: height 0.3s, width 0.3s 0.1s;
+                }
+            }
+
+            >p:last-child {
+                margin: 15px 20px;
+                text-decoration: underline;
+
+                &:hover {
+                    cursor: pointer;
+                    color: black;
+                    transition: color .5s;
+                }
+            }
+        }
+    }
+}
