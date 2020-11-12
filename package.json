@@ -1,0 +1,11 @@
+{
+  "name": "mirvkusov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch public/scss -o public/css"
+  },
+  "author": "",
+  "license": "ISC"
+}

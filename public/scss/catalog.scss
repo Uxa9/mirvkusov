@@ -2,6 +2,53 @@
 
 .wrapper {
 
+    .sub {
+        padding: 1px;
+        margin-left: 20px;
+        position: relative;
+        background: #ccc;
+        z-index: 1;
+        border-radius: 6px;
+        overflow: hidden;
+        width: 122px;
+
+        input {
+            background: white;
+            color: $textcolor1;
+            box-sizing: border-box;
+            font-size: 14px;
+            outline: none;
+            border: none;
+            z-index: 2;
+            padding: 10px 25px;
+            cursor: pointer;
+
+            border-radius: 5px;
+
+            &:hover ~ .border {
+                width: 100%;
+                height: 100%;
+            }
+
+            &:hover {
+                color: black;
+                transition: color 1s;
+            }
+        }
+
+        .border {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 0%;
+            background: black;
+            z-index: -1;
+            -webkit-transition: height 0.3s, width 0.3s 0.1s;
+            transition: height 0.3s, width 0.3s 0.1s;
+        }
+    }
 
     .main-content {
         display: flex;
@@ -43,8 +90,7 @@
                     cursor: pointer;
 
                     &:hover {
-                        border: solid 2px $textcolor1;
-                        transition: 1s;
+                        text-decoration: underline;
                     }
                 }
 
@@ -81,7 +127,7 @@
                 }
 
                 .country {
-                    >span {
+                    >span:last-child {
                         cursor: pointer;
 
                         color: $textcolor1;
@@ -94,53 +140,6 @@
                     }
                 }
             }
-            .apply-filters {
-                padding: 1px;
-                margin-left: 20px;
-                position: relative;
-                background: #ccc;
-                z-index: 1;
-                border-radius: 6px;
-                overflow: hidden;
-                width: 122px;
-
-                input {
-                    background: white;
-                    color: $textcolor1;
-                    box-sizing: border-box;
-                    font-size: 14px;
-                    outline: none;
-                    border: none;
-                    z-index: 2;
-                    padding: 10px 25px;
-                    cursor: pointer;
-
-                    border-radius: 5px;
-
-                    &:hover ~ .border {
-                        width: 100%;
-                        height: 100%;
-                    }
-
-                    &:hover {
-                        color: black;
-                        transition: color 1s;
-                    }
-                }
-
-                .border {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 0%;
-                    height: 0%;
-                    background: black;
-                    z-index: -1;
-                    -webkit-transition: height 0.3s, width 0.3s 0.1s;
-                    transition: height 0.3s, width 0.3s 0.1s;
-                }
-            }
 
             >p:last-child {
                 margin: 15px 20px;
@@ -150,6 +149,132 @@
                     cursor: pointer;
                     color: black;
                     transition: color .5s;
+                }
+            }
+        }
+
+        .showcase {
+            width: calc(100% - 200px);
+
+            .showcase-template {
+                display: flex;
+                flex-flow: column nowrap;
+
+                .goods {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    max-width: 1000px;
+                    background: $goodsbg;
+                    padding: 20px;
+                    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+
+                    img {
+                        height: 150px;
+                        width: 110px;
+                    }
+
+                    .goods-info {
+                        p {
+                            color: $textcolor4;
+                            font-size: 14px;
+                            padding-bottom: 3px;
+
+                            span:last-child {
+                                text-decoration: underline;
+                                color: $menucolor;
+                                cursor: pointer;
+                            }
+
+                            &:nth-child(1) {
+                                color: $textcolor5;
+                            }
+
+                            &:nth-child(2) {
+                                color: black;
+                                font-size: 22px;
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    .goods-price-and-button {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        align-items: flex-end;
+                        .price {
+                            display: flex;
+                            flex-flow: row nowrap;
+                            align-items: flex-end;
+
+                            .sale {
+                                color: white;
+                                background: #E5750C;
+                                border-radius: 3px;
+                                padding: 4px 8px;
+
+                                position: relative;
+                                right: 30%;
+                            }
+
+                            span {
+                                color: $textcolor5;
+                                font-size: 22px;
+                                text-decoration: line-through;
+                            }
+
+                            .new-price {
+                                text-decoration: none;
+                                color: #E5750C;
+                                font-weight: 800;
+                                font-size: 30px;
+                                padding-right: 20px;
+                            }
+                        }
+
+                        .to-cart-buttons {
+                            margin-top: 80px;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: center;
+                            .selector {
+                                display: flex;
+                                flex-flow: row nowrap;
+                                align-items: flex-end;
+                                justify-content: flex-end;
+
+                                .sel {
+                                    color: $textcolor6;
+                                    font-size: 18px;
+                                    width: 60px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        color: $textcolor1;
+                                        transition: 1s;
+                                    }
+                                }
+
+                                .active {
+                                    color: $textcolor1;
+                                    font-size: 22px;
+                                    font-weight: 800;
+                                    border: 1px solid #A39588;
+                                    box-sizing: border-box;
+                                    border-radius: 5px;
+                                }
+                            }
+
+                            .add-to-cart {
+                                width: 114px;
+                                height: 36px;
+                            }
+                        }
+                    }
                 }
             }
         }
