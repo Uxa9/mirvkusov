@@ -11,22 +11,41 @@
 		<div class="header">
 			<a href="index.html" class="logo"><h2>Mup BkycoB</h2></a>
 			<div class="navigation">
-				<a href="">Каталог</a>
-				<a href="">Доставка и оплата</a>
-				<a href="">Помощь</a>
-				<a href="">Контакты</a>
-				<a href="">Поиск</a>
+				<a href="catalog.html">Каталог</a>
+				<a href="orders.html">Доставка и оплата</a>
+				<a href="help.html">Помощь</a>
+				<a href="contacts.html">Контакты</a>
+				<div class="search">
+					Поиск
+				</div>
 			</div>
-			<a href="" class="city">Хабаровск</a>
+			<div class="city">Хабаровск</div>
 			<div class="profile-and-cart">
-				<img src="../public/images/common/profile.svg" alt="profile">
-				<img src="../public/images/common/cart.svg" alt="cart">
+				<a href="#"><img src="../public/images/common/profile.svg" alt="profile"></a>
+				<a href="#"><img src="../public/images/common/cart.svg" alt="cart"></a>
 			</div>
 		</div>
 
 		<div class="main-content">
+			<div class="mobile-menu">
+				<div class="profile-and-cart">
+					<a href="#"><img src="../public/images/common/cart-mobile.svg" alt="cart"></a>
+					<a href="#"><img src="../public/images/common/profile-mobile.svg" alt="profile"></a>
+				</div>
+				<div class="search-and-menu">
+					<div class="search">
+						<img src="../public/images/common/search.svg" alt="search">
+					</div>
+					<div class="menu">
+						<span class="line line-1"></span>
+						<span class="line line-2"></span>
+						<span class="line line-3"></span>
+					</div>
+				</div>
+			</div>
 			<div class="catalog">
 				<p><span>Главная </span>/ <span>Каталог </span>/ <span>Кофе</span></p>
+				<p>Кофе</p>
 				<p>Каталог</p>
 				<div class="categories">
 					<span>Чай</span>
@@ -117,11 +136,11 @@
 				<div class="showcase-panel">
 					<span>Загрузить прайс Excel</span>
 					<div class="showcase-panel-view">
-						<img src="../public/images/catalog/view-flex.svg" alt="column">
-						<img src="../public/images/catalog/view-grid.svg" alt="grid">
+						<img class="viewStyle active" src="../public/images/catalog/view-flex.svg" alt="column" id=viewFlex>
+						<img class="viewStyle" src="../public/images/catalog/view-grid.svg" alt="grid" id="viewGrid">
 					</div>
 				</div>
-				<div class="showcase-template">
+				<div class="showcase-template flex" id="layout">
 					<div class="goods">
 						<img src="../public/images/catalog/goods/coffee/brazil-santos-5 8.png" alt="goodsImage">
 						<div class="goods-info">
@@ -137,7 +156,199 @@
 									-15%
 								</div>
 								<span class="new-price">1100 ₽</span>
-								<span>1 300 ₽</span>
+								<span class="old-price">1 300 ₽</span>
+							</div>
+							<div class="to-cart-buttons">
+								<div class="selector">
+									<div class="sel active">
+										1 кг
+									</div>
+									<div class="sel">
+										5 кг
+									</div>
+									<div class="sel">
+										10 кг
+									</div>
+								</div>
+								<div class="add-to-cart sub">
+									<input type="submit" name="" value="В корзину">
+									<div class="border"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goods">
+						<img src="../public/images/catalog/goods/coffee/brazil-santos-5 8.png" alt="goodsImage">
+						<div class="goods-info">
+							<p>Кофе</p>
+							<p>Бразилия Сантос (темная обжарка)</p>
+							<p>Артикул 604380</p>
+							<p>Арабика, средний помол</p>
+							<p>В наличии <span>483</span> кг <span>на 2-х складах</span></p>
+						</div>
+						<div class="goods-price-and-button">
+							<div class="price">
+								<span class="">1 300 ₽</span>
+							</div>
+							<div class="to-cart-buttons">
+								<div class="selector">
+									<div class="sel active">
+										1 кг
+									</div>
+									<div class="sel">
+										5 кг
+									</div>
+									<div class="sel">
+										10 кг
+									</div>
+								</div>
+								<div class="add-to-cart sub">
+									<input type="submit" name="" value="В корзину">
+									<div class="border"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goods">
+						<img src="../public/images/catalog/goods/coffee/brazil-santos-5 8.png" alt="goodsImage">
+						<div class="goods-info">
+							<p>Кофе</p>
+							<p>Бразилия Сантос (темная обжарка)</p>
+							<p>Артикул 604380</p>
+							<p>Арабика, средний помол</p>
+							<p>В наличии <span>483</span> кг <span>на 2-х складах</span></p>
+						</div>
+						<div class="goods-price-and-button">
+							<div class="price">
+								<span class="">1 300 ₽</span>
+							</div>
+							<div class="to-cart-buttons">
+								<div class="selector">
+									<div class="sel active">
+										1 кг
+									</div>
+									<div class="sel">
+										5 кг
+									</div>
+									<div class="sel">
+										10 кг
+									</div>
+								</div>
+								<div class="add-to-cart sub">
+									<input type="submit" name="" value="В корзину">
+									<div class="border"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goods">
+						<img src="../public/images/catalog/goods/coffee/brazil-santos-5 8.png" alt="goodsImage">
+						<div class="goods-info">
+							<p>Кофе</p>
+							<p>Бразилия Сантос (темная обжарка)</p>
+							<p>Артикул 604380</p>
+							<p>Арабика, средний помол</p>
+							<p>В наличии <span>483</span> кг <span>на 2-х складах</span></p>
+						</div>
+						<div class="goods-price-and-button">
+							<div class="price">
+								<span class="">1 300 ₽</span>
+							</div>
+							<div class="to-cart-buttons">
+								<div class="selector">
+									<div class="sel active">
+										1 кг
+									</div>
+									<div class="sel">
+										5 кг
+									</div>
+									<div class="sel">
+										10 кг
+									</div>
+								</div>
+								<div class="add-to-cart sub">
+									<input type="submit" name="" value="В корзину">
+									<div class="border"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goods">
+						<img src="../public/images/catalog/goods/coffee/brazil-santos-5 8.png" alt="goodsImage">
+						<div class="goods-info">
+							<p>Кофе</p>
+							<p>Бразилия Сантос (темная обжарка)</p>
+							<p>Артикул 604380</p>
+							<p>Арабика, средний помол</p>
+							<p>В наличии <span>483</span> кг <span>на 2-х складах</span></p>
+						</div>
+						<div class="goods-price-and-button">
+							<div class="price">
+								<span class="">1 300 ₽</span>
+							</div>
+							<div class="to-cart-buttons">
+								<div class="selector">
+									<div class="sel active">
+										1 кг
+									</div>
+									<div class="sel">
+										5 кг
+									</div>
+									<div class="sel">
+										10 кг
+									</div>
+								</div>
+								<div class="add-to-cart sub">
+									<input type="submit" name="" value="В корзину">
+									<div class="border"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goods">
+						<img src="../public/images/catalog/goods/coffee/brazil-santos-5 8.png" alt="goodsImage">
+						<div class="goods-info">
+							<p>Кофе</p>
+							<p>Бразилия Сантос (темная обжарка)</p>
+							<p>Артикул 604380</p>
+							<p>Арабика, средний помол</p>
+							<p>В наличии <span>483</span> кг <span>на 2-х складах</span></p>
+						</div>
+						<div class="goods-price-and-button">
+							<div class="price">
+								<span class="">1 300 ₽</span>
+							</div>
+							<div class="to-cart-buttons">
+								<div class="selector">
+									<div class="sel active">
+										1 кг
+									</div>
+									<div class="sel">
+										5 кг
+									</div>
+									<div class="sel">
+										10 кг
+									</div>
+								</div>
+								<div class="add-to-cart sub">
+									<input type="submit" name="" value="В корзину">
+									<div class="border"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goods">
+						<img src="../public/images/catalog/goods/coffee/brazil-santos-5 8.png" alt="goodsImage">
+						<div class="goods-info">
+							<p>Кофе</p>
+							<p>Бразилия Сантос (темная обжарка)</p>
+							<p>Артикул 604380</p>
+							<p>Арабика, средний помол</p>
+							<p>В наличии <span>483</span> кг <span>на 2-х складах</span></p>
+						</div>
+						<div class="goods-price-and-button">
+							<div class="price">
+								<span class="">1 300 ₽</span>
 							</div>
 							<div class="to-cart-buttons">
 								<div class="selector">
@@ -186,12 +397,16 @@
 			</div>
 			<div class="contacts">
 				<h4>Контакты</h4>
-				<p>Телефон:<span>+7 (4212) 12-34-56</span></p>
-				<p>E-mail:<span>mirvkus@gmail.com</span></p>
-				<p>Сайт:<span>mirvkus.ru</span></p>
-				<p>Адрес:<span>680000, Россия, г. Хабаровск, ул. Комсомольская, д. 74, оф. 2</span></p>
+				<p><span>Телефон:</span><span>+7 (4212) 12-34-56</span></p>
+				<p><span>E-mail:</span><span>mirvkus@gmail.com</span></p>
+				<p><span>Сайт:</span><span>mirvkus.ru</span></p>
+				<p><span>Адрес:</span><span>680000, Россия, г. Хабаровск, ул. Комсомольская, д. 74, оф. 2</span></p>
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript" src="../public/js/catalog.js">
+
+	</script>
 </body>
 </html>

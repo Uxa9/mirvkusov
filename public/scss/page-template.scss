@@ -10,7 +10,9 @@ body {
 }
 
 .wrapper {
-
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
 	font-family: 'Geometria', sans-serif;
 	font-weight: normal;
 	color: #FFFFFF;
@@ -19,6 +21,7 @@ body {
 		font-family: 'Belepotan', sans-serif;
 		font-weight: 100;
 		font-style: italic;
+		min-width: 150px;
 	}
 
 	.main-content {
@@ -26,6 +29,10 @@ body {
 		color: $textcolor1;
 		border-radius: 20px;
 		padding: 120px;
+
+		.mobile-menu {
+			display: none;
+		}
 	}
 
 	.header {
@@ -33,35 +40,43 @@ body {
 		a {
 			color: #FFFFFF;
 			text-decoration: none;
+			padding-right: 50px;
 		}
 
 		.navigation {
 			display: flex;
 			flex-flow: row nowrap;
 			justify-content: space-between;
-			a {
+			>* {
 				padding: 0px 10px;
 				&:hover {
 					opacity: 0.5;
 					transition: .5s;
+					cursor: pointer;
 				}
 			}
 		}
 
 		.city {
+			cursor: pointer;
 			text-decoration: underline;
 		}
 
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: center;
+		justify-content: space-around;
+		align-items: flex-start;
 
-		padding: 30px 150px;
+		padding: 30px 30px;
 
 		.profile-and-cart {
 			display: flex;
 			flex-flow: row nowrap;
+			padding-left: 25px;
+
+			a {
+				padding-right: 0px;
+			}
 
 			img {
 				margin: 0px 5px;
@@ -77,14 +92,13 @@ body {
 	.footer {
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: space-between;
+		justify-content: space-around;
 
-		padding: 30px 150px;
+		padding: 30px 30px;
 
 		div {
 			display: flex;
 			flex-flow: column nowrap;
-
 			a {
 				color: #FFFFFF;
 				text-decoration: none;
@@ -104,6 +118,10 @@ body {
 				padding-bottom: 20px;
 			}
 
+			h2 {
+				width: 150px;
+			}
+
 			&:nth-child(1) {
 				font-size: 12px;
 
@@ -111,11 +129,134 @@ body {
 
 			&:nth-child(4) {
 				max-width: 33%;
-
 				p {
 					display: flex;
 					flex-flow: row nowrap;
+
+					span:first-child {
+						min-width: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.wrapper {
+		.header {
+			>*:not(.logo) {
+				display: none;
+			}
+
+			.logo {
+				padding: 0px;
+			}
+
+			padding: 20px 0px;
+		}
+
+		.main-content {
+			padding: 25px;
+			.mobile-menu {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-between;
+				.profile-and-cart {
+					img {
+						transform: scale(1.3);
+					}
+
+					a:last-child {
+						margin-left: 25px;
+					}
+				}
+
+				.search-and-menu {
+					display: flex;
+					flex-flow: row nowrap;
 					justify-content: space-between;
+					.search {
+						transform: scale(1.3);
+						margin-right: 25px;
+						cursor: pointer;
+					}
+					.menu {
+						cursor: pointer;
+						.line {
+							display:block;
+							content: '';
+							background:$bgcolor;
+							width:30px;
+							height:3px;
+							position: relative;
+							border-radius:2px;
+							transition: all 0.4s;
+							-webkit-transition: all 0.4s;
+							-moz-transition: all 0.4s;
+						}
+
+						.line-1 {
+							top:  -5%;
+						}
+
+						.line-2 {
+							top: 25%;
+						}
+
+						.line-3 {
+							top: 55%;
+						}
+
+						&:hover {
+							.line-1 {
+								transform: translateY(3px / 2 * -1) scaleX(1.2);
+							}
+							.line-3 {
+								transform: translateY(3px / 2 * 1) scaleX(1.2);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.footer {
+			flex-flow: column nowrap;
+			margin: 25px 40px;
+			text-align: left;
+			padding: 0px;
+			.main-info{
+				padding-top: 30px;
+				order: 999;
+			}
+
+			>div {
+				border-top: solid 1px #C4C4C4;
+				margin-bottom: 20px;
+				h2 {
+					width: 100%;
+				}
+				h4,a {
+					font-weight: 300;
+				}
+				h4 {
+					font-size: 24px;
+					padding-top: 15px;
+				}
+				a,p {
+					font-size: 18px;
+					padding: 5px 0px;
+				}
+
+				&:nth-child(4) {
+					max-width: 100%;
+
+					p {
+						span:first-child {
+							min-width: 100px;
+						}
+					}
 				}
 			}
 		}
