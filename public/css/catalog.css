@@ -124,16 +124,84 @@
   padding: 0px;
   margin: 0px; }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden; }
+
 body {
-  background-color: #A39588; }
+  background-color: #A39588;
+  font-family: 'Geometria', sans-serif; }
+
+.searchWindow {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.4);
+  opacity: 1;
+  z-index: 99999; }
+  .searchWindow .searchContent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    border-radius: 20px;
+    background: white;
+    z-index: 99999;
+    width: 100vw;
+    position: fixed;
+    top: 93px; }
+    .searchWindow .searchContent img, .searchWindow .searchContent .cross {
+      cursor: pointer; }
+    .searchWindow .searchContent input {
+      font-size: 18px;
+      color: black;
+      font-weight: 300;
+      border: none;
+      width: 60%;
+      margin: 0px 20px;
+      padding: 0px 30px; }
+      .searchWindow .searchContent input::placeholder {
+        color: #C4C4C4; }
+      .searchWindow .searchContent input:focus {
+        outline: none; }
+    .searchWindow .searchContent .cross {
+      width: 30px;
+      height: 30px; }
+      .searchWindow .searchContent .cross::before, .searchWindow .searchContent .cross::after {
+        display: block;
+        content: '';
+        background: #C4C4C4;
+        width: 3px;
+        height: 20px;
+        position: relative; }
+      .searchWindow .searchContent .cross::before {
+        transform: rotate(45deg);
+        top: 6px;
+        left: 15px; }
+      .searchWindow .searchContent .cross::after {
+        transform: rotate(-45deg);
+        top: -14px;
+        left: 15px; }
+  .searchWindow .bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #333333;
+    z-index: 99; }
 
 .wrapper {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  font-family: 'Geometria', sans-serif;
   font-weight: normal;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  z-index: -1; }
   .wrapper .logo {
     font-family: 'Belepotan', sans-serif;
     font-weight: 100;
@@ -210,6 +278,12 @@ body {
             min-width: 100px; }
 
 @media screen and (max-width: 900px) {
+  .searchWindow .searchContent input {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    width: 70%; }
   .wrapper .header {
     padding: 20px 0px; }
     .wrapper .header > *:not(.logo) {
@@ -282,6 +356,14 @@ body {
         max-width: 100%; }
         .wrapper .footer > div:nth-child(4) p span:first-child {
           min-width: 100px; } }
+
+.expand-goods {
+  position: absolute;
+  width: 310px;
+  height: 600px;
+  max-height: 600px;
+  z-index: 999;
+  transition: all 1s; }
 
 .sub {
   padding: 1px;
@@ -475,7 +557,7 @@ body {
               justify-content: flex-end; }
               .wrapper .main-content .showcase .flex .goods .goods-price-and-button .to-cart-buttons .selector .sel {
                 color: #C4C4C4;
-                font-size: 18px;
+                font-size: 20px;
                 width: 60px;
                 height: 40px;
                 line-height: 40px;
@@ -483,10 +565,9 @@ body {
                 cursor: pointer; }
                 .wrapper .main-content .showcase .flex .goods .goods-price-and-button .to-cart-buttons .selector .sel:hover {
                   color: #A39588;
-                  transition: 1s; }
+                  transition: border 1s ease; }
               .wrapper .main-content .showcase .flex .goods .goods-price-and-button .to-cart-buttons .selector .active {
                 color: #A39588;
-                font-size: 22px;
                 font-weight: 800;
                 border: 1px solid #A39588;
                 box-sizing: border-box;
@@ -504,13 +585,14 @@ body {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
         max-width: 1000px;
         background: #F8F8F8;
         padding: 20px;
         box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
-        margin-top: 15px; }
+        margin-top: 15px;
+        max-height: 400px; }
         .wrapper .main-content .showcase .grid .goods img {
           height: 150px;
           width: 110px; }
@@ -541,7 +623,8 @@ body {
             display: flex;
             flex-flow: row nowrap;
             align-items: flex-end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+            padding-bottom: 20px; }
             .wrapper .main-content .showcase .grid .goods .goods-price-and-button .price .sale {
               color: white;
               background: #E5750C;
@@ -569,7 +652,8 @@ body {
             margin-top: 80px;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: center; }
+            justify-content: center;
+            display: none; }
             .wrapper .main-content .showcase .grid .goods .goods-price-and-button .to-cart-buttons .selector {
               display: flex;
               flex-flow: row nowrap;
@@ -585,10 +669,9 @@ body {
                 cursor: pointer; }
                 .wrapper .main-content .showcase .grid .goods .goods-price-and-button .to-cart-buttons .selector .sel:hover {
                   color: #A39588;
-                  transition: 1s; }
+                  transition: 1s ease-out; }
               .wrapper .main-content .showcase .grid .goods .goods-price-and-button .to-cart-buttons .selector .active {
                 color: #A39588;
-                font-size: 22px;
                 font-weight: 800;
                 border: 1px solid #A39588;
                 box-sizing: border-box;
@@ -642,4 +725,6 @@ body {
             .wrapper .main-content .showcase .showcase-template .goods .goods-price-and-button .price .sale {
               order: 999;
               left: -195px;
-              bottom: -35px; } }
+              bottom: -35px; }
+          .wrapper .main-content .showcase .showcase-template .goods .goods-price-and-button .to-cart-buttons {
+            display: flex; } }

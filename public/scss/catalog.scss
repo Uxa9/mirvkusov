@@ -1,5 +1,15 @@
 @import "page-template.scss";
 
+.expand-goods {
+    position: absolute;
+    width: 310px;
+    height: 600px;
+    max-height: 600px;
+    z-index: 999;
+
+    transition: all 1s;
+}
+
 .sub {
     padding: 1px;
     margin-left: 20px;
@@ -289,7 +299,7 @@
 
                                 .sel {
                                     color: $textcolor6;
-                                    font-size: 18px;
+                                    font-size: 20px;
                                     width: 60px;
                                     height: 40px;
                                     line-height: 40px;
@@ -298,13 +308,12 @@
 
                                     &:hover {
                                         color: $textcolor1;
-                                        transition: 1s;
+                                        transition: border 1s ease;
                                     }
                                 }
 
                                 .active {
                                     color: $textcolor1;
-                                    font-size: 22px;
                                     font-weight: 800;
                                     border: 1px solid #A39588;
                                     box-sizing: border-box;
@@ -332,13 +341,14 @@
                     display: flex;
                     flex-flow: column nowrap;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     max-width: 1000px;
                     background: $goodsbg;
                     padding: 20px;
                     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
                     border-radius: 5px;
                     margin-top: 15px;
+                    max-height: 400px;
 
                     img {
                         height: 150px;
@@ -382,6 +392,7 @@
                             flex-flow: row nowrap;
                             align-items: flex-end;
                             justify-content: flex-end;
+                            padding-bottom: 20px;
 
                             .sale {
                                 color: white;
@@ -438,13 +449,12 @@
 
                                     &:hover {
                                         color: $textcolor1;
-                                        transition: 1s;
+                                        transition: 1s ease-out;
                                     }
                                 }
 
                                 .active {
                                     color: $textcolor1;
-                                    font-size: 22px;
                                     font-weight: 800;
                                     border: 1px solid #A39588;
                                     box-sizing: border-box;
@@ -456,6 +466,8 @@
                                 width: 114px;
                                 height: 36px;
                             }
+
+                            display: none;
                         }
                     }
                 }
@@ -541,6 +553,10 @@
                                     left: -195px;
                                     bottom: -35px;
                                 }
+                            }
+
+                            .to-cart-buttons {
+                                display: flex;
                             }
                         }
                     }

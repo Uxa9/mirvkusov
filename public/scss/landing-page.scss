@@ -135,6 +135,14 @@
 						width: 150px;
 					}
 					padding: 0px 10px;
+
+					.sel {
+						font-size: 18px;
+
+						&::after {
+							width: 80px;
+						}
+					}
 				}
 
 				.active {
@@ -142,20 +150,28 @@
 						height: 150px;
 						width: 150px;
 						transform: scale(1.2);
+						z-index: 999;
 					}
 				}
 
 				.spices {
 					img {
-						transform: translateX(-70px);
+						transform: translateX(55px);
 						transition: 1s ease-in-out;
+					}
+					span {
+						transform: translateX(55px);
 					}
 				}
 
 				.tea {
 					img {
-						transform: translateX(70px);
+						transform: translateX(-55px);
 						transition: 1s ease-in-out;
+						z-index: 0;
+					}
+					span {
+						transform: translateX(-55px);
 					}
 				}
 			}
@@ -178,6 +194,7 @@
 
 					margin-top: 20px;
 					padding-top: 20px;
+					margin-bottom: 60px;
 
 					p {
 
@@ -192,8 +209,23 @@
 						width: 100%;
 						padding: 20px 0px;
 						font-size: 30px;
+						text-decoration: none;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.image-and-text {
+		margin-bottom: 200px;
+
+		.text-and-button {
+			.gotoCat {
+				width: 100%;
+				padding: 20px 0px;
+				font-size: 14px;
 			}
 		}
 	}
