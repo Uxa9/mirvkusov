@@ -74,8 +74,12 @@
                     font-size: 13px;
                     color: $textcolor3;
 
-                    span:hover {
-                        cursor: pointer;
+                    a {
+                        text-decoration: none;
+                        color: $textcolor3;
+                    }
+
+                    a:hover {
                         color: black;
                     }
                 }
@@ -175,9 +179,8 @@
                 flex-flow: row nowrap;
                 justify-content: space-between;
 
-                span {
-                    text-decoration: underline;
-                    cursor: pointer;
+                a {
+                    color: $textcolor1;
                 }
 
                 .showcase-panel-view {
@@ -223,6 +226,7 @@
                     }
 
                     .goods-info {
+                        text-decoration: none;
                         p {
                             color: $textcolor4;
                             font-size: 14px;
@@ -557,6 +561,15 @@
 
                             .to-cart-buttons {
                                 display: flex;
+
+                                .selector {
+                                    .sel {
+                                        font-size: 14px;
+                                        width: 45px;
+                                        height: 30px;
+                                        line-height: 30px;
+                                    }
+                                }
                             }
                         }
                     }

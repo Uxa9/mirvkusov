@@ -414,8 +414,10 @@ body {
     .wrapper .main-content .catalog > p:nth-child(1) {
       font-size: 13px;
       color: #828282; }
-      .wrapper .main-content .catalog > p:nth-child(1) span:hover {
-        cursor: pointer;
+      .wrapper .main-content .catalog > p:nth-child(1) a {
+        text-decoration: none;
+        color: #828282; }
+      .wrapper .main-content .catalog > p:nth-child(1) a:hover {
         color: black; }
     .wrapper .main-content .catalog > p:nth-child(2) {
       display: none; }
@@ -475,9 +477,8 @@ body {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between; }
-      .wrapper .main-content .showcase .showcase-panel span {
-        text-decoration: underline;
-        cursor: pointer; }
+      .wrapper .main-content .showcase .showcase-panel a {
+        color: #A39588; }
       .wrapper .main-content .showcase .showcase-panel .showcase-panel-view img {
         padding-left: 5px;
         cursor: pointer; }
@@ -502,20 +503,22 @@ body {
         .wrapper .main-content .showcase .flex .goods img {
           height: 150px;
           width: 110px; }
-        .wrapper .main-content .showcase .flex .goods .goods-info p {
-          color: #888888;
-          font-size: 14px;
-          padding-bottom: 3px; }
-          .wrapper .main-content .showcase .flex .goods .goods-info p span:last-child {
-            text-decoration: underline;
-            color: #666666;
-            cursor: pointer; }
-          .wrapper .main-content .showcase .flex .goods .goods-info p:nth-child(1) {
-            color: #8A8A8A; }
-          .wrapper .main-content .showcase .flex .goods .goods-info p:nth-child(2) {
-            color: black;
-            font-size: 22px;
-            padding-bottom: 10px; }
+        .wrapper .main-content .showcase .flex .goods .goods-info {
+          text-decoration: none; }
+          .wrapper .main-content .showcase .flex .goods .goods-info p {
+            color: #888888;
+            font-size: 14px;
+            padding-bottom: 3px; }
+            .wrapper .main-content .showcase .flex .goods .goods-info p span:last-child {
+              text-decoration: underline;
+              color: #666666;
+              cursor: pointer; }
+            .wrapper .main-content .showcase .flex .goods .goods-info p:nth-child(1) {
+              color: #8A8A8A; }
+            .wrapper .main-content .showcase .flex .goods .goods-info p:nth-child(2) {
+              color: black;
+              font-size: 22px;
+              padding-bottom: 10px; }
         .wrapper .main-content .showcase .flex .goods .goods-price-and-button {
           display: flex;
           flex-flow: column nowrap;
@@ -727,4 +730,9 @@ body {
               left: -195px;
               bottom: -35px; }
           .wrapper .main-content .showcase .showcase-template .goods .goods-price-and-button .to-cart-buttons {
-            display: flex; } }
+            display: flex; }
+            .wrapper .main-content .showcase .showcase-template .goods .goods-price-and-button .to-cart-buttons .selector .sel {
+              font-size: 14px;
+              width: 45px;
+              height: 30px;
+              line-height: 30px; } }
