@@ -1,0 +1,71 @@
+@import "page-template.scss";
+
+.wrapper {
+    .main-content {
+        .shopcart {
+            >p {
+                color: $textcolor1;
+                &:nth-child(1) {
+                    a {
+                        color: $textcolor1;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $textcolor3;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    font-size: 30px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+
+            .cart {
+                margin-top: 70px;
+                width: 250px;
+                p {
+                    &:nth-child(1) {
+                        color: black;
+                        font-weight: bold;
+                        font-size: 24px;
+                    }
+
+                    &:nth-child(2) {
+                        padding: 25px 0px;
+                    }
+                }
+
+                input {
+                    padding: 10px 40px;
+                    font-size: 20px;
+
+                    font-family: 'Geometria', sans-serif;
+                    font-size: 16px;
+                    font-weight: 200;
+                    color: white;
+                    background: $bgcolor;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        .main-content {
+            .shopcart {
+                >p {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
