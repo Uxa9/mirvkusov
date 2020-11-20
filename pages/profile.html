@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../public/css/landing-page.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/profile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<title></title>
@@ -24,7 +24,7 @@
 				<a href="orders.html">Доставка и оплата</a>
 				<a href="help.html">Помощь</a>
 				<a href="contacts.html">Контакты</a>
-				<div class="search">
+				<div class="search" id="search">
 					Поиск
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 					<a href="profile.html"><img src="../public/images/common/profile-mobile.svg" alt="profile"></a>
 				</div>
 				<div class="search-and-menu">
-					<div class="search">
+					<div class="search" id="search">
 						<img src="../public/images/common/search.svg" alt="search">
 					</div>
 					<div class="menu">
@@ -52,42 +52,49 @@
 					</div>
 				</div>
 			</div>
-			<div class="selector">
-				<div class="spices">
-					<img src="../public/images/landing/spices.png" alt="spices">
-					<span class="sel">Специи</span>
-				</div>
-				<div class="coffee active">
-					<img src="../public/images/landing/coffee.png" alt="coffee">
-					<span class="sel">Кофе</span>
-				</div>
-				<div class="tea">
-					<img src="../public/images/landing/tea.png" alt="tea">
-					<span class="sel">Чай</span>
-				</div>
-			</div>
-			<div class="image-and-text">
-				<img src="../public/images/landing/mainPic.png" alt="someNiceImage">
-				<div class="text-and-button">
-					<p>Лучшие продукты со всего мира</p>
-					<p>Оптовый дистрибьютор Дальневосточного
-						Федерального Округа ООО “Мир вкусов” является
-						 крупнейшим поставщиком чая и кофе.</p>
-					<p>Лучшие сорта зерен молотой арабики имеют
-						великолепный вкус и непревзойденный аромат. </p>
-					<p>Благодаря качественной обжарке кофе отдает максимальный вкус и придает
-						Особенные вкусы Зерна молотой арабики имеют великолепный вкус и
-						непревзойденный аромат. Благодаря качественной обжарке кофе отдает
-						максимальный.</p>
-					<p>Лучшие сорта Зерна молотой арабики имеют великолепный
-					вкус и непревзойденный аромат.
-					Благодаря качественной обжарке кофе отдает максимальный вкус и придает</p>
-					<a href="catalog.html" class="gotoCat">
-						Перейти в каталог
-					</a>
+
+			<div class="lk">
+				<p><a href="index.html">Главная </a>/ <a href="catalog.html">Личный кабинет </a>/ <a href="catalog.html">Личные данные </a></p>
+				<p>Личный кабинет</p>
+
+				<div class="lk-content">
+					<div class="selector">
+						<p class="active">Личные данные</p>
+						<p>История заказов</p>
+						<p>Документы</p>
+						<p>Изменить пароль</p>
+						<p>Выйти</p>
+					</div>
+					<div class="data">
+						<div class="face">
+							<span class="active">Физическое лицо</span>
+							<span>Юридическое лицо</span>
+						</div>
+						<div class="fields">
+							<input type="text" name="" value="" placeholder="Телефон">
+							<input type="text" name="" value="" placeholder="E-mail">
+							<input type="text" name="" value="" placeholder="Фамилия">
+							<input class="hide" type="text" name="" value="" placeholder="">
+							<input type="text" name="" value="" placeholder="Имя">
+							<input type="text" name="" value="" placeholder="Отчество">
+						</div>
+						<p>Пол</p>
+						<div class="gender">
+							<input type="checkbox" name="" value="" placeholder="">
+							<span>М</span>
+							<input type="checkbox" name="" value="" placeholder="">
+							<span>Ж</span>
+						</div>
+						<p>Дата рождения</p>
+						<input type="date" name="" value="">
+						<textarea name="name" rows="8" cols="80"> Адрес доставки
+						</textarea>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
 
 		<div class="footer">
 			<div class="main-info">
