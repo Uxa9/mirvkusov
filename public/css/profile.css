@@ -419,31 +419,65 @@ body {
         background: #F8F8F8;
         border-radius: 5px;
         box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1); }
+        .wrapper .main-content .lk .lk-content .data .face span:nth-child(2) {
+          margin-left: 20px; }
       .wrapper .main-content .lk .lk-content .data .face .active {
         background: #A39588;
         color: white;
         margin-right: 15px; }
-    .wrapper .main-content .lk .lk-content .data .fields {
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 25px; }
-      .wrapper .main-content .lk .lk-content .data .fields input {
+    .wrapper .main-content .lk .lk-content .data .fiz {
+      display: none; }
+      .wrapper .main-content .lk .lk-content .data .fiz .fields {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px; }
+        .wrapper .main-content .lk .lk-content .data .fiz .fields input {
+          font-family: 'Geometria', sans-serif;
+          padding: 5px 10px;
+          border: none;
+          outline: none;
+          border: 1px solid #C4C4C4;
+          border-radius: 5px; }
+          .wrapper .main-content .lk .lk-content .data .fiz .fields input:nth-child(4) {
+            opacity: 0; }
+      .wrapper .main-content .lk .lk-content .data .fiz p {
+        margin-top: 15px;
+        font-size: 12px; }
+      .wrapper .main-content .lk .lk-content .data .fiz .gender span {
+        color: black; }
+      .wrapper .main-content .lk .lk-content .data .fiz > input {
+        margin-bottom: 20px; }
+    .wrapper .main-content .lk .lk-content .data .ur {
+      display: block; }
+      .wrapper .main-content .lk .lk-content .data .ur .fields > input {
+        margin: 20px 0px;
         font-family: 'Geometria', sans-serif;
         padding: 5px 10px;
+        width: 100%;
         border: none;
         outline: none;
         border: 1px solid #C4C4C4;
         border-radius: 5px; }
-        .wrapper .main-content .lk .lk-content .data .fields input:nth-child(4) {
-          opacity: 0; }
-    .wrapper .main-content .lk .lk-content .data p {
-      margin-top: 15px;
-      font-size: 12px; }
-    .wrapper .main-content .lk .lk-content .data .gender span {
-      color: black; }
-    .wrapper .main-content .lk .lk-content .data > input {
-      margin-bottom: 20px; }
+      .wrapper .main-content .lk .lk-content .data .ur .fields .org {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center; }
+        .wrapper .main-content .lk .lk-content .data .ur .fields .org span {
+          padding-left: 5px; }
+        .wrapper .main-content .lk .lk-content .data .ur .fields .org input:nth-child(3) {
+          margin-left: 20px; }
+      .wrapper .main-content .lk .lk-content .data .ur .fields .aaa {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px; }
+        .wrapper .main-content .lk .lk-content .data .ur .fields .aaa input {
+          font-family: 'Geometria', sans-serif;
+          padding: 5px 10px;
+          border: none;
+          outline: none;
+          border: 1px solid #C4C4C4;
+          border-radius: 5px; }
 
 @media screen and (max-width: 900px) {
   .wrapper .main-content .lk {
@@ -454,10 +488,18 @@ body {
         display: none; }
       .wrapper .main-content .lk .lk-content .data {
         margin-left: 0px; }
-        .wrapper .main-content .lk .lk-content .data .fields {
+        .wrapper .main-content .lk .lk-content .data .fiz .fields {
           display: flex;
           flex-flow: column nowrap; }
-          .wrapper .main-content .lk .lk-content .data .fields input:nth-child(4) {
+          .wrapper .main-content .lk .lk-content .data .fiz .fields input:nth-child(4) {
             display: none; }
-        .wrapper .main-content .lk .lk-content .data textarea {
-          width: 100%; } }
+        .wrapper .main-content .lk .lk-content .data .fiz textarea {
+          width: 100%; }
+        .wrapper .main-content .lk .lk-content .data .ur .fields {
+          display: flex;
+          flex-flow: column nowrap; }
+          .wrapper .main-content .lk .lk-content .data .ur .fields > input {
+            width: auto; }
+          .wrapper .main-content .lk .lk-content .data .ur .fields .aaa {
+            display: flex;
+            flex-flow: column nowrap; } }

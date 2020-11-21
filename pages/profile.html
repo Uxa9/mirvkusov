@@ -73,28 +73,49 @@
 					</div>
 					<div class="data">
 						<div class="face">
-							<span class="active">Физическое лицо</span>
-							<span>Юридическое лицо</span>
+							<span>Физическое лицо</span>
+							<span class="active">Юридическое лицо</span>
 						</div>
-						<div class="fields">
-							<input type="text" name="" value="" placeholder="Телефон">
-							<input type="text" name="" value="" placeholder="E-mail">
-							<input type="text" name="" value="" placeholder="Фамилия">
-							<input class="hide" type="text" name="" value="" placeholder="">
-							<input type="text" name="" value="" placeholder="Имя">
-							<input type="text" name="" value="" placeholder="Отчество">
+						<div class="fiz">
+							<div class="fields">
+								<input type="text" name="" value="" placeholder="Телефон">
+								<input type="text" name="" value="" placeholder="E-mail">
+								<input type="text" name="" value="" placeholder="Фамилия">
+								<input class="hide" type="text" name="" value="" placeholder="">
+								<input type="text" name="" value="" placeholder="Имя">
+								<input type="text" name="" value="" placeholder="Отчество">
+							</div>
+							<p>Пол</p>
+							<div class="gender">
+								<input type="checkbox" name="" value="" placeholder="">
+								<span>М</span>
+								<input type="checkbox" name="" value="" placeholder="">
+								<span>Ж</span>
+							</div>
+							<p>Дата рождения</p>
+							<input type="date" name="" value="">
+							<textarea name="name" rows="8" cols="80"> Адрес доставки
+							</textarea>
 						</div>
-						<p>Пол</p>
-						<div class="gender">
-							<input type="checkbox" name="" value="" placeholder="">
-							<span>М</span>
-							<input type="checkbox" name="" value="" placeholder="">
-							<span>Ж</span>
+						<div class="ur">
+							<div class="fields">
+								<input type="text" name="" value="" placeholder="Название организации или ИП">
+								<div class="org">
+									<input type="radio" name="" value="" placeholder="">
+									<span>Организация</span>
+									<input type="radio" name="" value="" placeholder="">
+									<span>ИП</span>
+								</div>
+								<input type="text" name="" value="" placeholder="Юридический адрес">
+								<div class="aaa">
+									<input type="text" name="" value="" placeholder="ИНН">
+									<input type="text" name="" value="" placeholder="КПП">
+									<input type="text" name="" value="" placeholder="Расчетный счет">
+									<input type="text" name="" value="" placeholder="Корреспондентский счёт">
+									<input type="text" name="" value="" placeholder="БИК">
+								</div>
+							</div>
 						</div>
-						<p>Дата рождения</p>
-						<input type="date" name="" value="">
-						<textarea name="name" rows="8" cols="80"> Адрес доставки
-						</textarea>
 					</div>
 				</div>
 			</div>
@@ -136,6 +157,8 @@
 
 	<script type="text/javascript" src="../public/js/template.js">
 
+	</script>
+	<script type="text/javascript" src="../public/js/profile.js">
 	</script>
 </body>
 </html>
