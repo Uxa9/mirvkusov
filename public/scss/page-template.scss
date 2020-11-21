@@ -351,7 +351,7 @@ body {
 					transform: translate(0px, 100vh);
 
 					transform-origin: 0% 100%;
-					transition: all 1s ease-out;
+					transition: transform 1s ease-out;
 
 					a {
 						text-decoration: none;
@@ -359,6 +359,7 @@ body {
 						font-size: 24px;
 						padding: 10px 0px;
 					}
+					opacity: 0;
 				}
 			}
 		}

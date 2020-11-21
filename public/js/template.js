@@ -22,6 +22,7 @@ burger.onclick = function() {
     if (!burger.classList.contains('open')) {
         burger.classList.add('open');
         document.body.classList.add('stop-scrolling');
+        nav.style.opacity = "100%";
         nav.style.transform = "translate(0px, calc(0vh + 150px))";
     }
     else {

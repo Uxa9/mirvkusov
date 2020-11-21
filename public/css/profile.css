@@ -348,7 +348,8 @@ body {
         z-index: 99999;
         transform: translate(0px, 100vh);
         transform-origin: 0% 100%;
-        transition: all 1s ease-out; }
+        transition: transform 1s ease-out;
+        opacity: 0; }
         .wrapper .main-content .mobile-menu .navigation a {
           text-decoration: none;
           color: black;
