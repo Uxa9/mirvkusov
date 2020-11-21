@@ -278,6 +278,9 @@ body {
             min-width: 100px; }
 
 @media screen and (max-width: 900px) {
+    .wrapper .main-content .catalog {
+        padding-top: 30px;
+    }
   .searchWindow .searchContent input {
     font-size: 14px;
     margin: 0;

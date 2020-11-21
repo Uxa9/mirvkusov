@@ -357,6 +357,10 @@ body {
         .wrapper .footer > div:nth-child(4) p span:first-child {
           min-width: 100px; } }
 
+.wrapper .main-content .catalog {
+    padding-top: 30px;
+}
+
 .wrapper .main-content .selector {
   display: flex;
   flex-flow: row nowrap;
@@ -536,7 +540,7 @@ body {
 
 .help{
   display: grid;
-  
+
   /* grid-template-columns: 1fr 1fr; */
 }
 
@@ -563,7 +567,7 @@ margin-left: 0%;
   width: 100%;
   color: #828282;
   overflow: hidden;
-  
+
 }
 .tab input {
   position: absolute;
@@ -625,12 +629,3 @@ margin-left: 0%;
 .tab input[type=radio]:checked + label::after {
   transform: rotateX(180deg);
 }
-
-
-
-
-
-
-
-
-

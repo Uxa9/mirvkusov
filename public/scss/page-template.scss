@@ -282,6 +282,7 @@ body {
 						margin-right: 25px;
 						cursor: pointer;
 					}
+
 					.menu {
 						cursor: pointer;
 						.line {
@@ -309,14 +310,54 @@ body {
 							top: 55%;
 						}
 
-						&:hover {
-							.line-1 {
-								transform: translateY(3px / 2 * -1) scaleX(1.2);
-							}
-							.line-3 {
-								transform: translateY(3px / 2 * 1) scaleX(1.2);
-							}
+						// &:hover {
+						// 	.line-1 {
+						// 		transform: translateY(3px / 2 * -1) scaleX(1.2);
+						// 	}
+						// 	.line-3 {
+						// 		transform: translateY(3px / 2 * 1) scaleX(1.2);
+						// 	}
+						// }
+					}
+
+					.open {
+						.line-1 {
+							transform: translate(0px, 10px) rotate(45deg);
 						}
+
+						.line-2 {
+							display: none;
+						}
+
+						.line-3 {
+							transform: translate(0px, -9px) rotate(-45deg);
+						}
+					}
+				}
+
+				.navigation {
+					display: flex;
+					flex-flow: column nowrap;
+					align-items: center;
+					justify-content: flex-start;
+					padding-top: calc(40vh - 120px);
+					position: fixed;
+					top: 0px;
+					left: 0px;
+					background: white;
+					width: 100vw;
+					height: 100vh;
+					z-index: 99999;
+					transform: translate(0px, 100vh);
+
+					transform-origin: 0% 100%;
+					transition: all 1s ease-out;
+
+					a {
+						text-decoration: none;
+						color: black;
+						font-size: 24px;
+						padding: 10px 0px;
 					}
 				}
 			}
